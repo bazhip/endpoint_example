@@ -1,7 +1,7 @@
 module "build" {
     source              = "git::https://github.com/cloudposse/terraform-aws-cicd.git?ref=master"
-    namespace           = "eg"
-    stage               = "staging"
+    namespace           = "endpoint"
+    stage               = "test"
     name                = "app"
 
     # Enable the pipeline creation

@@ -8,13 +8,13 @@ module "elastic_beanstalk_application" {
 
 module "elastic_beanstalk_environment" {
   source                             = "git::https://github.com/cloudposse/terraform-aws-elastic-beanstalk-environment.git?ref=master"
-  namespace                          = "enpoint"
+  namespace                          = "endpoint"
   stage                              = "test"
   name                               = "env"
   description                        = "Test elastic_beanstalk_environment"
   region                             = "us-east-2"
   availability_zone_selector         = "Any 2"
-  dns_zone_id                        = "Z07836231QIE0NVX5NE3J"
+  dns_zone_id                        = "Z07719552AERLXLM0PUSK"
   elastic_beanstalk_application_name = module.elastic_beanstalk_application.elastic_beanstalk_application_name
 
   instance_type           = "t3.micro"
